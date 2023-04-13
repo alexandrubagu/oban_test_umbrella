@@ -26,7 +26,8 @@ defmodule AppB.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:persistence, in_umbrella: true}
+      {:persistence, in_umbrella: true},
+      {:oban, "~> 2.14"}
     ]
   end
 end
