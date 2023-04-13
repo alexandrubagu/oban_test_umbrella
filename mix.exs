@@ -16,6 +16,8 @@ defmodule ObanTestUmbrella.MixProject do
   #
   # Run "mix help deps" for examples and options.
   defp deps do
-    []
+    [
+      {:oban, "~> 2.14"}
+    ]
   end
 end
