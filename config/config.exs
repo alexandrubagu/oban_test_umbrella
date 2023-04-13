@@ -12,4 +12,14 @@ import Config
 config :persistence,
   ecto_repos: [Persistence.Repo]
 
+config :app_a, Oban,
+  name: AppA.Oban,
+  repo: Persistence.Repo,
+  queues: [default: 10]
+
+config :app_b, Oban,
+  name: AppB.Oban,
+  repo: Persistence.Repo,
+  queues: [default: 10]
+
 import_config "#{config_env()}.exs"
