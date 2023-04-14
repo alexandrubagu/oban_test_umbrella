@@ -10,7 +10,5 @@ defmodule ObanTestUmbrella.MixProject do
     ]
   end
 
-  defp deps do
-    []
-  end
+  defp deps, do: []
 end

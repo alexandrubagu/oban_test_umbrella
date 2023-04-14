@@ -15,7 +15,9 @@ defmodule AppA.Application do
 
   # AppA.Application.start 1
   def start(number) do
-    job = AppA.Worker.new(%{number: number, callback_worker: AppA.Worker})
+    job = AppA.Worker.new(%{number: number})
     Oban.insert(AppA.Oban, job)
+
+    :ok
   end
 end
